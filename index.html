@@ -1,1 +1,40 @@
-Yes, he is sick!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Is Matan Sick?</title>
+</head>
+<body>
+    <div class="everything">
+    <h1>Well well well, is matan sick? that is the question!</h1>
+    <button class="btn" onclick="reveal();">
+        Click to see if matan is sick
+    </button>
+    <div id="answer">
+
+    </div>
+    <audio controls hidden id="song">
+        <source src="roll.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </div>
+    <script>
+        const reveal = () => {
+            document.getElementById('answer').innerHTML = '<p>Of course he fucking is you idiot! Did you really have to click it to figure it out??</p>';
+            
+            setTimeout(() => {
+                document.body.style.backgroundImage = "url('rick.gif')"
+
+            document.querySelector(".everything").style.display = "none"
+
+            let song = document.getElementById("song")
+            song.play()
+            }, 3000);
+            
+                }
+    </script>
+</body>
+</html>
